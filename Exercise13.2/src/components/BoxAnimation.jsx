@@ -1,12 +1,19 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import './BoxAnimation.css'
 
-export default function BoxAnimation() {
-const [box, setBox] = useState('true');
+export default function BoxAnimation({ size }) {
+  const [isVisible, setIsVisible] = useState(true);
+  
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsVisible(false);
+    }, 4000);
 
-  return (
-    <div>
-      <div className='box'>{box}</div>
-    </div>
-  )
-}
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+  return isVisible ? <div className={`box ${size}`}></div> : null;
+};
+

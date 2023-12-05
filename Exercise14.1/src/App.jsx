@@ -1,11 +1,13 @@
+import { useState } from 'react'
 import './App.css'
-import FavoriteColor from './components/favoriteColor'
+import GetJoke from './components/GetJoke'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-     <FavoriteColor />
+<GetJoke />
     </>
   )
 }

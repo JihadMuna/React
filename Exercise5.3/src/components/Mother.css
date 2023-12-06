@@ -1,0 +1,16 @@
+.mother {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 350px;
+    background-color: aqua;
+    justify-content: center;
+    color: black;
+}
+
+.balloons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+}

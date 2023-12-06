@@ -1,0 +1,40 @@
+.word-spelling-game {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.word-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+}
+
+.feedback {
+  color: green;
+  font-weight: bold;
+}
